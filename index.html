@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
+</head>
+<body>
+  <form novalidate>
+
+    <p>
+      <label for="email">
+        <span>Please enter email:</span>
+        <input type="email" id="email" name="email" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="country">
+        <span>Please enter country:</span>
+        <input type="text" id="country" name="country" required>
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="zip">
+        <span>Please enter zip:</span>
+        <input type="text" id="zip" name="zip" required>
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="password">
+        <span>Please enter password:</span>
+        <input type="password" id="password" name="password" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <p>
+      <label for="pass-confirm">
+        <span>Please confirm password:</span>
+        <input type="password" id="pass-confirm" name="pass-confirm" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+
+    <button>Submit</button>
+    
+  </form>
+</body>
+</html>
